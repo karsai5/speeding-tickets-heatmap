@@ -12,6 +12,9 @@
 <body>
     <div id="info">
         <div class="header">
+            <p class="toggle toggle-close">
+                <a href="#" class="pure-menu-link">Close</a>
+            </p>
             <h2>NSW Speeding and Red Light Camera Offences</h2>
         </div>
         <h3>Top 10 Suburbs by number of infringements</h3>
@@ -93,10 +96,18 @@
         <p>Suburbs are shaded to represent number of infringements. Red areas with the most and blue with the least.</p>
         <img src="./img/heat.png" alt="Gradient from blue to red." />
         <p><i class="camera"></i>Represent the location of safety cameras</p>
-    </div><!-- end info div -->
-    <div id="map">
-
     </div>
+    <!-- end info div -->
+    <div id="map"> </div>
+
+<div id="footer">
+            <h2>NSW Speeding and Red Light Camera Offences</h2>
+            <p class="toggle toggle-open">
+                <a href="#" class="pure-menu-link">About this page</a>
+            </p>
+</div>
+
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf-8" src="markers.js"></script>
     <script type="text/javascript" charset="utf-8" src="main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEvQJpNIqk7MofI5l-epv4clavppeovJg&callback=initMap" async defer></script>

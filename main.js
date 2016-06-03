@@ -5,7 +5,12 @@ function initMap() {
 			lat: -33.888304,
 			lng: 151.193576
 		},
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		mapTypeControl: true,
+		mapTypeControlOptions: {
+			style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+			position: google.maps.ControlPosition.TOP_RIGHT
+		},
 	});
 
 	var layer = new google.maps.FusionTablesLayer({
@@ -68,3 +73,17 @@ function setMarkers(map) {
 		});
 	}
 }
+
+$(document).ready(function() {
+	console.log('ready');
+	$('p.toggle a').on('click', function() {
+		console.log('what you clicking me for?');
+		$('#info').toggle();
+	});
+	$(window).resize(function() {
+		if (!$('#info').is(":visible") && $(window).width() > 600) {
+			console.log($(window).width());
+			$('#info').show();
+		}
+	});
+});

@@ -14,35 +14,108 @@ body {
     padding: 0 15px 15px 15px;
     position: absolute;
     top: 10px;
-	bottom: 40px;
+    bottom: 40px;
     min-width: 230px;
     max-width: 250px;
     left: 10px;
     z-index: 5;
     background: #fff;
-	overflow-y:auto;
-	font-size:small;	
+    overflow-y: auto;
+    font-size: small;
+	display: block;
 }
 
 #info img {
-	max-width: 230px;
+    max-width: 230px;
 }
 
-#info p, #info h1, #info h2, #info h3 {
-	width: 230px;
+#info p,
+#info h1,
+#info h2,
+#info h3 {
+    width: 230px;
 }
 
 i.camera {
-	width: 10px;
-	height: 17px;
-	background: url('./img/camera.png');
-	background-size: 10px;
-	background-repeat: no-repeat;
-	background-position: 0 6px;
-	display: inline-block;
-	margin-right: 3px;
+    width: 10px;
+    height: 17px;
+    background: url('./img/camera.png');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    display: inline-block;
+    margin-right: 2.8px;
 }
 
 table {
-	font-size:x-small;
+    font-size: x-small;
+}
+
+p.toggle-close {
+    display: none;
+}
+
+#footer {
+    box-sizing: border-box;
+    overflow: hidden;
+    /* height: 80px; */
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #888;
+    font-size: small;
+}
+
+#footer h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    #map {
+        height: calc( 100% - 100px);
+    }
+    #info {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: none;
+        text-align: center;
+        padding-top: 3em;
+        display: none;
+    }
+    #info img {
+        max-width: 100%;
+    }
+    #info p,
+    #info h1,
+    #info h2,
+    #info h3 {
+        width: auto;
+    }
+    table {
+        font-size: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p.toggle-close {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        display: inherit;
+        z-index: 6;
+        margin: 0;
+        font-size: small;
+    }
+    p.toggle-open a {
+        width: 100%;
+        box-sizing: border-box;
+		text-align: center;
+    }
+    p.toggle a {
+        display: inline-block;
+        background: #eee;
+    }
 }
