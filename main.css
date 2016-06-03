@@ -15,7 +15,8 @@ body {
     position: absolute;
     top: 10px;
 	bottom: 40px;
-    width: 230px;
+    min-width: 230px;
+    max-width: 250px;
     left: 10px;
     z-index: 5;
     background: #fff;
@@ -25,6 +26,10 @@ body {
 
 #info img {
 	max-width: 230px;
+}
+
+#info p, #info h1, #info h2, #info h3 {
+	width: 230px;
 }
 
 i.camera {
