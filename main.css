@@ -58,7 +58,8 @@ p.toggle-close {
 #footer {
     box-sizing: border-box;
     overflow: hidden;
-    /* height: 80px; */
+	display:none;
+
     
     padding-left: 15px;
     padding-right: 15px;
@@ -118,4 +119,8 @@ p.toggle-close {
         display: inline-block;
         background: #eee;
     }
+
+	#footer {
+		display: inherit;
+	}
 }
