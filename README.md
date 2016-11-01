@@ -1,4 +1,4 @@
-# SpeedingTickets_Heatmap
+# Speeding Tickets Heatmap
 
 Publibly available at linusk.com.au/heatmap
 
